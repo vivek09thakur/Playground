@@ -1,0 +1,50 @@
+<soap:Envelope
+    xsi:schemaLocation="http://www.w3.org/2001/12/soap-envelope MIAL_SOAP-Alerts_Signals.xsd"
+    encodingStyle="http://www.w3.org/2001/12/soap-encoding" xmlns:Ext="http://www.csia.com/xmlns"
+    xmlns:iata="http://www.iata.org/IATA/2007/00" xmlns:cap="urn:oasis:names:tc:emergency:cap:1.2"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:soap="http://www.w3.org/2001/12/soap-envelope"
+    xmlns:p="http://www.ibm.com/xmlns/transportation/airport/meta">
+    <soap:Header>
+        <p:Meta>
+            <p:SNDR>VDGS</p:SNDR>
+            <p:TMST>2024-10-12T06:57:16</p:TMST>
+            <p:SEQN>11495797</p:SEQN>
+            <p:TYPE>STAT</p:TYPE>
+            <p:SUBT>UPDT</p:SUBT>
+        </p:Meta>
+    </soap:Header>
+    <soap:Body>
+        <cap:alert>
+            <cap:identifier>11495797</cap:identifier>
+            <cap:sender>VDGS</cap:sender>
+            <cap:sent>2024-10-12T06:57:16+05:30</cap:sent>
+            <cap:status>Actual</cap:status>
+            <cap:msgType>Update</cap:msgType>
+            <cap:scope>Restricted</cap:scope>
+            <cap:info>
+                <cap:category>Infra</cap:category>
+                <cap:event>DGS Status</cap:event>
+                <cap:urgency>Immediate</cap:urgency>
+                <cap:severity>Severe</cap:severity>
+                <cap:certainty>Observed</cap:certainty>
+                <cap:eventCode>
+                    <cap:valueName>StatusCode</cap:valueName>
+                    <cap:value>2</cap:value>
+                </cap:eventCode>
+                <cap:description>Err. Chk error code</cap:description>
+                <cap:parameter>
+                    <cap:valueName>DGS</cap:valueName>
+                    <cap:value>Error</cap:value>
+                </cap:parameter>
+                <cap:area>
+                    <cap:areaDesc>V4R</cap:areaDesc>
+                    <cap:geocode>
+                        <cap:valueName>Stand</cap:valueName>
+                        <cap:value>V4R</cap:value>
+                    </cap:geocode>
+                </cap:area>
+            </cap:info>
+        </cap:alert>
+    </soap:Body>
+</soap:Envelope>
