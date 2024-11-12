@@ -17,3 +17,8 @@ const valueofpie = Math.PI;
 
 console.log("Value of Pie: ", valueofpie);
 console.log("Type of Pie: ", typeof(valueofpie));
+
+//  Float and Integers are treated as Number in JavaScript.
+
+
+// 3 Strings
