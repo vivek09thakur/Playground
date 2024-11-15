@@ -13,10 +13,10 @@ console.log("Type of User ID : ", typeof(userID));
 // 2. Float
 
 // const  userRating = BigInt(522345678901234567890);
-const valueofpie = Math.PI;
+const valueless = Math.PI;
 
-console.log("Value of Pie: ", valueofpie);
-console.log("Type of Pie: ", typeof(valueofpie));
+console.log("Value of Pie: ", valueless);
+console.log("Type of Pie: ", typeof(valueless));
 
 //  Float and Integers are treated as Number in JavaScript.
 
